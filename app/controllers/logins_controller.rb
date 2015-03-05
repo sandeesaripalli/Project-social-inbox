@@ -1,4 +1,4 @@
-class PagesController < ApplicationController
+class LoginsController < ApplicationController
   def search_results
   end
 

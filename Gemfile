@@ -32,19 +32,22 @@ group :doc do
 end
 
 #Authentication Gems
+
+group :authentication do
+  gem 'devise'
+  gem 'omniauth', '~> 1.2.2'
+end
+
 group :twitter do
   gem 'twitter'
-  gem 'omniauth-twitter'
+  gem 'omniauth-twitter', '~> 1.1.0'
 end
 
 group :facebook do
   gem 'omniauth-facebook'
 end
 
-group :authentication do
-  gem 'devise'
-  gem 'omniauth'
-end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

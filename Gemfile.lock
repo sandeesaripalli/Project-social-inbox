@@ -200,9 +200,9 @@ DEPENDENCIES
   devise
   font-awesome-rails (= 4.3.0.0)
   jbuilder (~> 1.2)
-  omniauth
+  omniauth (~> 1.2.2)
   omniauth-facebook
-  omniauth-twitter
+  omniauth-twitter (~> 1.1.0)
   rails (= 4.2.0)
   sass-rails (~> 4.0.0)
   sdoc

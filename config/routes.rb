@@ -1,8 +1,11 @@
 Myapp::Application.routes.draw do
 
-  devise_for :users
   # You can have the root of your site routed with "root"
-  root to: 'dashboards#dashboard_1'
+  root to: 'logins#login'
+  get '/auth/:provider/callback' => 'sessions#create'
+  get '/signin' => 'sessions#new', :as => :signin
+  get '/signout' => 'sessions#destroy', :as => :signout
+  get '/auth/failure' => 'sessions#failure'
 
   # All routes
   get "dashboards/dashboard_1"
@@ -46,16 +49,16 @@ Myapp::Application.routes.draw do
   get "appviews/timeline"
   get "appviews/pin_board"
 
-  get "pages/search_results"
-  get "pages/lockscreen"
-  get "pages/invoice"
-  get "pages/invoice_print"
-  get "pages/login"
-  get "pages/login_2"
-  get "pages/register"
-  get "pages/not_found_error"
-  get "pages/internal_server_error"
-  get "pages/empty_page"
+  get "logins/search_results"
+  get "logins/lockscreen"
+  get "logins/invoice"
+  get "logins/invoice_print"
+  get "logins/login"
+  get "logins/login_2"
+  get "logins/register"
+  get "logins/not_found_error"
+  get "logins/internal_server_error"
+  get "logins/empty_page"
 
   get "miscellaneous/notification"
   get "miscellaneous/nestablelist"
