@@ -58,8 +58,8 @@
 /* ERROR & LOGIN & LOCKSCREEN */
 
 .middle-box {
-  height: 400px;
-  width: 400px;
+  height: 100%;
+  width: 800px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -75,8 +75,8 @@
 }
 
 .loginscreen.middle-box {
-  width: 300px;
-  margin-left: -150px;
+  width: 630px;
+  margin-left: -320px;
   margin-top: -330px;
 }
 
@@ -87,18 +87,18 @@
 
 .logo-name {
   color: #e6e6e6;
-  font-size: 180px;
-  font-weight: 800;
-  letter-spacing: -10px;
-  margin-bottom: 0px;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 40px;
 }
 
 .middle-box h1 {
-  font-size: 170px;
+  font-size: 70px;
 }
 
 .wrapper .middle-box {
-  margin-top: 140px;
+  margin-top: 170px;
 }
 
 .lock-word {
