@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.2.0'
 gem 'bootstrap-sass', '3.3.0.0'
 gem 'font-awesome-rails', '4.3.0.0'
 
@@ -30,13 +30,22 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-gem 'twitter'
-gem 'devise'
-gem 'omniauth'
-gem 'omniauth-twitter'
-gem 'omniauth-facebook'
-gem 'omniauth-linkedin'
-gem 'omniauth-google'
+
+#Authentication Gems
+group :twitter do
+  gem 'twitter'
+  gem 'omniauth-twitter'
+end
+
+group :facebook do
+  gem 'omniauth-facebook'
+end
+
+group :authentication do
+  gem 'devise'
+  gem 'omniauth'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
