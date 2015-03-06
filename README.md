@@ -1,1 +1,1 @@
-Social Managment Application
+Social Managment Application - Initial Phase
