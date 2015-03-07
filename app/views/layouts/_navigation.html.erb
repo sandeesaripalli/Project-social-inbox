@@ -94,16 +94,16 @@
             </li>
             <li class="<%= is_active_controller('logins') %>">
                 <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level is_active_controller('pages')">
-                    <li class="<%= is_active_action('search_results') %>"><%= link_to "Search results", pages_search_results_path %> </li>
-                    <li class="<%= is_active_action('lockscreen') %>"><%= link_to "Lockscreen", pages_lockscreen_path %> </li>
-                    <li class="<%= is_active_action('invoice') %>"><%= link_to "Invoice", pages_invoice_path %> </li>
-                    <li class="<%= is_active_action('login') %>"><%= link_to "Login", pages_login_path %> </li>
-                    <li class="<%= is_active_action('login_2') %>"><%= link_to "Login v.2", pages_login_2_path %></li>
-                    <li class="<%= is_active_action('register') %>"><%= link_to "Register", pages_register_path %> </li>
-                    <li class="<%= is_active_action('not_found_error') %>"><%= link_to "404 Page", pages_not_found_error_path %> </li>
-                    <li class="<%= is_active_action('internal_server_error') %>"><%= link_to "500 Page", pages_internal_server_error_path %> </li>
-                    <li class="<%= is_active_action('empty_page') %>"><%= link_to "Empty page", pages_empty_page_path %> </li>
+                <ul class="nav nav-second-level is_active_controller('logins')">
+                    <li class="<%= is_active_action('search_results') %>"><%= link_to "Search results", logins_search_results_path %> </li>
+                    <li class="<%= is_active_action('lockscreen') %>"><%= link_to "Lockscreen", logins_lockscreen_path %> </li>
+                    <li class="<%= is_active_action('invoice') %>"><%= link_to "Invoice", logins_invoice_path %> </li>
+                    <li class="<%= is_active_action('login') %>"><%= link_to "Login", logins_login_path %> </li>
+                    <li class="<%= is_active_action('login_2') %>"><%= link_to "Login v.2", logins_login_2_path %></li>
+                    <li class="<%= is_active_action('register') %>"><%= link_to "Register", logins_register_path %> </li>
+                    <li class="<%= is_active_action('not_found_error') %>"><%= link_to "404 Page", logins_not_found_error_path %> </li>
+                    <li class="<%= is_active_action('internal_server_error') %>"><%= link_to "500 Page", logins_internal_server_error_path %> </li>
+                    <li class="<%= is_active_action('empty_page') %>"><%= link_to "Empty page", logins_empty_page_path %> </li>
                 </ul>
             </li>
             <li class="<%= is_active_controller('miscellaneous') %>">
